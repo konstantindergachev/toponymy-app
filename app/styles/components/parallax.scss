@@ -1,0 +1,40 @@
+/*----------- Parallax (Scroll different layers) Start -----------*/
+.parallax {
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 75%;
+    }
+    &__first {
+        background: url("/img/kharkiv.jpg") no-repeat fixed 100%;
+        background-position-y: 0px;
+    }
+    &__second {
+        background: url("/img/kharkiv_4.jpg") center center no-repeat;
+        background-size: cover;
+        outline: 7px dashed #262626;
+        outline-offset: -5px;
+    }
+    &__third {
+        background: url("/img/kharkiv_5.jpg") no-repeat fixed 100%;
+        background-size: fixed;
+    }
+    &__fourth {
+        background: url("/img/rimarska.jpg") center center no-repeat;
+        background-size: cover;
+        outline: 7px dashed #262626;
+        outline-offset: -5px;
+    }
+    &__first-bcg {
+        background: rgba(29, 25, 29, 0.1);
+    }
+    &__first-title, &__second-title, &__third-title, &__fourth-title {
+        text-transform: uppercase;
+        line-height: 30;
+        text-align: center;
+        margin: 0;
+        font-size: 4rem;
+        color: #ffffff;
+
+    }
+}

@@ -1,0 +1,27 @@
+-const links = ['/registration', '/login', '/logout', 'https://github.com/konstantindergachev', 'http://facebook.com'];
+nav#social__menu.social__menu(role='navigation')
+  ul.social__menu-toplist
+    if !user
+      li.social__menu-item
+        a.social__menu-link(href='/registration' register)
+          i(class='fa fa-registered')
+            span.container__menu-text= 'register'
+      li.social__menu-item
+        a.social__menu-link(href='/login' login)
+          i(class='fa fa-sign-in')
+            span.container__menu-text= 'sign-in'
+    if user
+      li.social__menu-item
+        a.social__menu-link(href='/logout' logout)
+          i(class='fa fa-sign-out')
+            span.container__menu-text= 'sign-out'
+    if pageID === 'interesting' || pageID === 'toponymy' || pageID === 'admin'
+        include search-box
+    li.social__menu-item
+      a.social__menu-link(href='https://github.com/konstantindergachev' target='_blank')
+        i(class='fa fa-github')
+          span.container__menu-text= 'github'
+    li.social__menu-item
+      a.social__menu-link(href='https://www.facebook.com/profile.php?id=100003527152401' target='_blank')
+        i(class='fa fa-facebook')
+          span.container__menu-text= 'facebook'

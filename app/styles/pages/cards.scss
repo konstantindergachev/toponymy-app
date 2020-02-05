@@ -1,0 +1,64 @@
+.main {
+    &__area {
+        padding: 2em;
+        margin-top: 166px;
+        @include respond(phone) {
+            flex: 1 1 auto;
+            order: 1;
+        }
+    }
+    &__centered {
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+    &__cards {
+        @include respond(phone) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; // margin-top: -1em;
+        }
+    }
+    &__card {
+        margin-bottom: 2em;
+        background: #ffffff;
+        @include respond(phone) {
+            display: flex;
+            flex: 0 1 calc(50% - 0.5em);
+            margin-bottom: 1em;
+        }
+        @include respond(tab-port) {
+            flex: 0 1 calc(33% - 1em);
+            margin-bottom: 2em;
+        }
+    }
+    &__link {
+        color: #000000;
+        text-decoration: none;
+        &:hover {
+            box-shadow: 3px 3px 8px #b2b2b2;
+        }
+    }
+    &__content {
+        padding: 1.4em;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        text-indent: 1rem;
+        text-align: justify;
+        @include respond(phone) {
+            max-width: 40em;
+            margin: 0 auto;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: .5em;
+            font-weight: normal;
+        }
+        p {
+            font-size: 95%;
+        }
+    }
+}
+
+.author__link {
+    color: #000000;
+    text-decoration: none;
+}

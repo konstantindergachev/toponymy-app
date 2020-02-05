@@ -1,0 +1,11 @@
+.fixed__header, .fixed__menu{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.fixed__header{
+    top: 0;
+}
+.fixed__menu{
+    top: 117px;
+}

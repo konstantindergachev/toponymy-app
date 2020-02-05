@@ -1,0 +1,23 @@
+.footer {
+    background: #bfbfbf;
+    text-align: center;
+    // height: 6.3vh;
+    // margin-top: 20rem;
+    &__copyright{
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000000;
+        transition: all .2s;
+        padding: 0 5px;
+        &:hover,
+        &:active {
+            color: #ffffff;
+            background: #262626;
+            box-shadow: 0 1rem 2rem rgba(#000000, .4);
+        }
+    }
+}

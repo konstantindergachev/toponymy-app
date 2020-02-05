@@ -1,0 +1,27 @@
+.success{
+    background: forestgreen;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #FFC0CB;
+  }
+  
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FFC0CB;
+  }
+  
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #FFC0CB;
+  }
+  
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #FFC0CB;
+  }

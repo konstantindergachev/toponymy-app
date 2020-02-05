@@ -1,0 +1,60 @@
+[register]:hover:after {
+  content: 'Регистрация';
+  padding: 4px 8px;
+  color: #ffffff;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #222222;
+  background: #262626;
+}
+[login]:hover:after {
+  content: 'Войти';
+  padding: 4px 8px;
+  color: #ffffff;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #222222;
+  background: #262626;
+}
+[logout]:hover:after {
+  content: 'Выйти';
+  padding: 4px 8px;
+  color: #ffffff;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #222222;
+  background: #262626;
+}
+[github]:hover:after {
+  content: 'Github';
+  padding: 4px 8px;
+  color: #ffffff;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #222222;
+  background: #262626;
+}
+[facebook]:hover:after {
+  content: 'Facebook';
+  padding: 4px 8px;
+  color: #ffffff;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #222222;
+  background: #262626;
+}

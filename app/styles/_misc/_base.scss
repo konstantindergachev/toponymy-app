@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px, 10/16 = 62.5%
+}
+
+body {
+  background: hsl(0, 0%, 90%);
+  font-family: 'Amatic SC', sans-serif;
+  letter-spacing: .25rem;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}

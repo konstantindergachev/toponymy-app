@@ -1,0 +1,91 @@
+﻿/*-------------------- max-width --------------------*/
+@mixin size__1600{
+  @media screen and (max-width: 1600px){
+    @content;
+  }
+}
+@mixin size__1270{
+  @media screen and (max-width: 1270px){
+    @content;
+  }
+}
+
+@mixin size__960{
+  @media screen and (max-width: 960px){
+    @content;
+  }
+}
+
+@mixin size__840{
+  @media screen and (max-width: 840px){
+    @content;
+  }
+}
+
+@mixin size__600{
+  @media screen and (max-width: 600px){
+    @content;
+  }
+}
+
+@mixin size__480{
+  @media screen and (max-width: 480px){
+    @content;
+  }
+}
+@mixin size__350{
+  @media screen and (max-width: 350px){
+    @content;
+  }
+}
+
+/*-------------------- min-width --------------------*/
+@mixin size__40em{
+  @media screen and (min-width: 40em){
+    @content;
+  }
+}
+@mixin size__60em{
+  @media screen and (min-width: 60em){
+    @content;
+  }
+}
+/*---------- '' ----------*/
+
+/*---------- 'MEDIA QUERY MANAGER' ----------*/
+/*
+
+Порядок применения/ORDER: base.scss + typography.scss -> layout folder + float-grid.scss -> pages folder -> components folder
+
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+200 - 1800px: is where our normal styles apply
+1800px + : Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+600px / 16px = 37.5em
+900px / 16px = 56.25em
+1200px / 16px = 75em
+1800px / 16px = 112.5em
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone{
+    @media only screen and (min-width: 40em) {@content;}
+  }
+  @if $breakpoint == tab-port{
+    @media only screen and (min-width: 60em) {@content;}
+  }
+  @if $breakpoint == tab-land{
+    @media only screen and (max-width: 75em) {@content;}
+  }
+  @if $breakpoint == big-desktop{
+    @media only screen and (min-width: 112.5em) {@content;}
+  }
+}

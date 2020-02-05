@@ -1,0 +1,65 @@
+.table__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 233px);
+    margin-top: 166px;
+    .form{
+        display: none;
+        @include respond(phone){
+            display: flex;
+        }
+    }
+}
+
+.table {
+    // border: 1px solid #222222;
+    border-top: none;
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: calc(100vh - 235px);
+    @include respond(phone) {
+        padding: 0 10px;
+        width: 1070px;
+    }
+}
+
+.old__name,
+.district__area,
+.new__name {
+    text-align: center;
+    flex: 0 0 33.3333333%;
+    font-size: 12px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    @include respond(tab-port) {
+        font-size: 18px;
+    }
+}
+
+.show__notes {
+    width: 100%;
+    @include respond(phone) {}
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        @include respond(phone) {}
+        input {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            flex-basis: 100%;
+            font-size: 12px;
+            @include respond(tab-port) {
+                font-size: 18px;
+            }
+        }
+    }
+    &-id {
+        display: none;
+        input {
+            display: none;
+        }
+    }
+}

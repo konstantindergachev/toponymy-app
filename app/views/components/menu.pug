@@ -1,0 +1,17 @@
+-const items = ["top", "middle", "bottom"];
+-const nav = 'menu__nav';
+.menu
+  nav(id= nav class= nav role='navigation')
+    ul.menu__list
+      li.menu__item
+        a.menu__link(href='/') Главная
+      li.menu__item
+        a.menu__link(href='/interesting') Интересное о...
+      li.menu__item
+        a.menu__link(href='/toponymy') Объекты Топоминики
+      li.menu__item
+        a.menu__link(href='/map') Карта
+  #sandwich__nav.sandwich__nav
+    for item in items
+      div(class= item id= item)
+  include socmenu-top

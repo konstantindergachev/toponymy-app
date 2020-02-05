@@ -1,0 +1,23 @@
+-const idName = ['name', 'password'];
+-const attrName = ['username', 'password'];
+-const attrPlaceHold = ['Имя', 'Пароль'];
+
+section.centered__form
+  .centered__form-wrapper
+    form.form(method="POST" action="/login")
+      .form__field
+        h3 Регистрация
+      if(err)
+        -for(let i = 0; i < idName.length && i < attrName.length && i < attrPlaceHold.length && i < err.length; i++)
+          .form__field
+            label.error= err[i].msg
+            input.form__control(type='text', id=idName[i] name=attrName[i], autofocus='', placeholder=attrPlaceHold[i], tabindex=i)
+        button#submit.sign__btn(type='submit') Отправить
+      else
+          .form__field
+            label
+            input#name.form__control(type='text', name='username', autofocus='', placeholder='Имя', tabindex='1')
+          .form__field
+            label
+            input#password.form__control(type='password', name='password', placeholder='Пароль', tabindex='2')
+          button#submit.sign__btn(type='submit') Отправить

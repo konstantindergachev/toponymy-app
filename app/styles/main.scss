@@ -1,0 +1,30 @@
+﻿$fa-font-path: "fonts";
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400');
+
+@import "lib/scss/font-awesome.scss";
+@import "lib/normalize-7.0.0.scss";
+@import "_misc/_variables.scss";
+@import "_misc/_fixed.scss";
+@import "_misc/_animation.scss";
+@import "_misc/_mixins.scss";
+@import "_misc/_reset.scss";
+
+@import "layout/header.scss";
+@import "components/menu.scss";
+@import "components/search-box.scss";
+@import "components/button.scss";
+@import "components/socmenu.scss";
+@import "components/sandwich-menu.scss";
+@import "components/parallax.scss";
+@import "components/registration-form.scss";
+@import "components/tooltip.scss";
+@import "pages/cards.scss";
+@import "pages/data.scss";
+@import "pages/admin.scss";
+@import "pages/map.scss";
+@import "layout/footer.scss";
+@import "_misc/_error.scss";
+@import "_misc/_success.scss";
+@import "_misc/_base.scss";

@@ -1,0 +1,11 @@
+header.header
+  .header__logo
+    img.header__link(src="../img/logo/zerkalo.svg", alt="")
+  .header__centered
+    .header__branding
+      h1.header__branding-title Харьков
+  .header__user
+    if user
+      h4.header__title= user.username
+    else
+      h4.header__title Гость

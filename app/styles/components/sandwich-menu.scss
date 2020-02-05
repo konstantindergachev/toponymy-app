@@ -1,0 +1,41 @@
+.sandwich__nav {
+  flex-grow: 2;
+  margin-left: .9rem;
+  align-self: center;
+  order: -1;
+  cursor: pointer;
+
+  transition: left .5s $easing;
+  .top,
+  .middle,
+  .bottom {
+    width: 30px;
+    height: 4px;
+    background: #e6e6e6;
+    border-radius: 40%;
+  }
+  .top,
+  .middle {
+    margin-bottom: 6px;
+  }
+  @include respond(tab-port) {
+    opacity: 0;
+    order: 0;
+    visibility: hidden;
+  }
+}
+
+.sandwich__nav.active {
+  z-index: 10000;
+  border-radius: 40%;
+  transition: left .5s $easing;
+  .top {
+    transform: translateY(10px) rotate(-135deg);
+  }
+  .middle {
+    opacity: 0;
+  }
+  .bottom {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}

@@ -1,0 +1,37 @@
+.show__notes-save,
+.show__notes-edit,
+.show__notes-delete {
+    width: 200px;
+    cursor: pointer;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: .15rem;
+    text-align: center;
+    line-height: 2;
+    font-size: 12px;
+    box-sizing: content-box;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    transition: all .5s;
+    box-shadow: 0 5px 5px rgba(252, 162, 17, .2);
+}
+
+.show__notes-save {
+    display: none;
+    background: #222222;
+    color: #fca211;
+}
+
+.show__notes-edit {
+    background-color: #d4ac6e;
+    color: #ffffff;
+}
+
+.show__notes-delete {
+    background-color: #c1502e;
+    color: #ffffff;
+}
+
+.input__shown,
+.active {
+    display: block;
+}

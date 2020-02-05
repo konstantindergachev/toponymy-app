@@ -1,0 +1,22 @@
+-const idName = ['old__name', 'admin__district', 'new__name'];
+-const attrPlaceHold = ['Старое Имя', 'Административный район', 'Новое имя'];
+
+form.form(name='ToponymyForm')
+  if(err)
+    -for(let i = 0; i < idName.length && i < attrPlaceHold.length && i < err.length; i++)
+      .form__field
+        label.error= err[i].msg
+        input.form__control(type='text', id=idName[i] placeholder=attrPlaceHold[i])
+    button.sign__btn(type='submit') Добавить
+  else
+    .form__field
+      label
+      input#old__name.form__control(type='text', placeholder='Старое имя')
+    .form__field
+      label
+      input#admin__district.form__control(type='text', placeholder='Административный район')
+    .form__field
+      label
+      input#new__name.form__control(type='text', placeholder='Новое имя')
+    button.sign__btn(type='submit') Добавить
+include table-admin

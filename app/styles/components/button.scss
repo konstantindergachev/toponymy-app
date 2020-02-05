@@ -1,0 +1,35 @@
+.sign__btn {
+    background: #222222;
+    color: #fca211;
+    width: 20rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    box-sizing: content-box;
+    border-radius: 3px;
+    border: 1px solid #222222;
+    transition: all .5s;
+    box-shadow: 0 5px 5px rgba(252, 162, 17, .2);
+    &:hover {
+        background: #fca211;
+        color: #353535;
+        border: 1px solid transparent;
+        transition: all .3s ease-in;
+    }
+}
+
+.btn__return {
+    text-align: center;
+}
+
+.link__return {
+    border-bottom: 1px solid #262626;
+    text-decoration: none;
+    color: #262626;
+    &:hover,
+    &:active {
+        color: #ffffff;
+        background: #262626;
+        box-shadow: 0 1rem 2rem rgba(#000000, .4);
+    }
+}

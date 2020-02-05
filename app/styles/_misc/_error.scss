@@ -1,0 +1,47 @@
+/*---------- validation ----------*/
+.error{
+    background: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+  }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #FFC0CB;
+  }
+  
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FFC0CB;
+  }
+  
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #FFC0CB;
+  }
+  
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #FFC0CB;
+  }
+
+  /*---------- Error page ----------*/
+
+.wrapper__error {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.error__image {
+  max-width: 300px;
+  align-self: center;
+}
+
+.error__message {
+  text-align: center;
+}
