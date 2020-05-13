@@ -1,3 +1,4 @@
 /app/server/config/config_dev.js
 /node_modules
+variables.env.now
 yarn.lock
