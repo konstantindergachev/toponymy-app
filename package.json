@@ -4,7 +4,11 @@
   "description": "A simple search application in Node and Express hosted on Heroku",
   "main": "app/server.js",
   "author": "Konstantin Dergachev",
-  "keywords": [ "node", "express", "static" ],
+  "keywords": [
+    "node",
+    "express",
+    "static"
+  ],
   "license": "MIT",
   "scripts": {
     "scss": "node-sass app/styles/main.scss app/public/css/style.css",
@@ -14,7 +18,7 @@
     "start": "node app/server.js"
   },
   "engine": {
-    "node": "13.7.0"
+    "node": "14.3.0"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -24,7 +28,7 @@
     "express-session": "^1.17.0",
     "express-validator": "^4.3.0",
     "mongoose": "5.8.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "passport": "^0.4.1",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
